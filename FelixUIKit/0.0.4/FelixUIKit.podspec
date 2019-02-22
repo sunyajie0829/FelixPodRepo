@@ -92,21 +92,21 @@ Pod::Spec.new do |spec|
 
   spec.source_files  = "FelixUIKit/Classes/**/*"
   # spec.exclude_files = "Classes/Exclude"
-    # spec.public_header_files = "FelixUIKit/Classes/*.h"
-    #   #-------------------------文件分级-------------------------#
-    #   spec.subspec 'FelixTableView' do |ss|
-    #   ss.source_files = "FelixUIKit/Classes/FelixTableView/**/*"
-    #   end
-    #   spec.subspec 'FelixButton' do |ss|
-    #   ss.source_files = "FelixUIKit/Classes/FelixButton/**/*"
-    #   end
-    #   spec.subspec 'FelixTabBarController' do |ss|
-    #   ss.dependency 'FelixUIKit/FelixButton'
-    #   ss.source_files = "FelixUIKit/Classes/FelixTabBarController/**/*"
-    #   end
-    #   spec.subspec 'FelixPageViewController' do |ss|
-    #   ss.source_files = "FelixUIKit/Classes/FelixPageViewController/**/*"
-    #   end
+    spec.public_header_files = "FelixUIKit/Classes/*.h"
+      #-------------------------文件分级-------------------------#
+      spec.subspec 'FelixTableView' do |ss|
+      ss.source_files = "FelixUIKit/Classes/FelixTableView/**/*"
+      end
+      spec.subspec 'FelixButton' do |ss|
+      ss.source_files = "FelixUIKit/Classes/FelixButton/**/*"
+      end
+      spec.subspec 'FelixTabBarController' do |ss|
+      ss.dependency 'FelixUIKit/FelixButton'
+      ss.source_files = "FelixUIKit/Classes/FelixTabBarController/**/*"
+      end
+      spec.subspec 'FelixPageViewController' do |ss|
+      ss.source_files = "FelixUIKit/Classes/FelixPageViewController/**/*"
+      end
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
